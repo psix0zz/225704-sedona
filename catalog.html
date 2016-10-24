@@ -9,27 +9,27 @@
     <header class="main-header">
           <div class="container">
         <nav class="main-navigation">
-          <ul>
-            <li>
+          <ul class="navigation">
+            <li class="information">
               <a href="#">Информация</a>
             </li>
-            <li>
+            <li class="photo-video">
               <a href="#">Фото и видео</a>
             </li>
-            <li>
+            <li class="logo">
                 <a href="index.html"><img src="#" alt="City-of-Sedona" width="150" height="50"></a>
             </li>
-            <li>
+            <li class="state-map">
               <a href="#">Карта штата</a>
             </li>
-            <li>
+            <li class="hotels">
               <a href="#">Гостиницы</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>  
-  </body>
+  
 
   <main class="hotels-container">
     <form action="#" method="get">
@@ -63,9 +63,9 @@
         </ul>
       </div>
 
-      <div class="price-per-day">
+      <div class="price">
         <b>Стоимость в сутки (р):</b>
-          <div>
+          <div class="price-per-day">
             <input type="text" name="price" id="low">
             <input type="text" name="price" id="high">   
           </div>
@@ -77,8 +77,6 @@
 
       <input type="submit" value="Показать">
     </form>
-    
-  </main class="results">
 
     <div class="found">
       <b>Найдено: 3</b>
@@ -99,32 +97,91 @@
         </ul>
 
       <div class="buttons">
-            <a href="#"><img src="#" alt="top-top" width="20" height="20"></a>
-            <a href="#"><img src="#" alt="top-bot" width="20" height="20"></a>
+            <a href="#"><img src="#" alt="to-top" width="20" height="20"></a>
+            <a href="#"><img src="#" alt="to-bot" width="20" height="20"></a>
       </div>
     </div>
 
     <section class="search-results">
-      <div class="hotel-result">
-        <div class="hotel-picture">
-          <img src="#" alt="Отель" width="20" height="20">
+      <div class="hotel-1">
+        <div class="hotel-1-picture">
+          <img src="#" alt="amara" width="20" height="20">
         </div>
-        <div class="hotel-name">
-          <b>AMARA RESORT & SPA</b>
-            <div class="">
-              
+        <div class="amara">
+          <b class="hotel-1-name">AMARA RESORT & SPA</b>
+            <div class="hotel-1-left">
+                <p class="hotel-1-type">Гостиница</p>
+                <input type="submit" value="Подробнее">
+            </div>
+            <div class="hotel-1-right">
+                <p class="hotel-1-price">От 3500 р.</p>
+                <input type="submit" value="Забронировать">
             </div>
         </div>
-
-
-
-        
+            <div class="stars">
+              <img src="#" alt="star" width="20" height="20">
+              <img src="#" alt="star" width="20" height="20">
+              <img src="#" alt="star" width="20" height="20">
+              <img src="#" alt="star" width="20" height="20">
+            </div>
+            <div class="rating">
+              <p class="rating-count">
+                Рейтинг: 8,5
+              </p>
+            </div>
       </div>
-      <div class="motel-result">
-        
+
+      <div class="hotel-2">
+        <div class="hotel-2-picture">
+          <img src="#" alt="desert" width="20" height="20">
+        </div>
+        <div class="desert">
+          <b class="hotel-2-name">Desert Quail Inn</b>
+            <div class="hotel-2-left">
+                <p class="hotel-2-type">Мотель</p>
+                <input type="submit" value="Подробнее">
+            </div>
+            <div class="hotel-2-right">
+                <p class="hotel-2-price">От 2000 р.</p>
+                <input type="submit" value="Забронировать">
+            </div>
+        </div>
+            <div class="stars">
+              <img src="#" alt="star" width="20" height="20">
+              <img src="#" alt="star" width="20" height="20">
+            </div>
+            <div class="rating">
+              <p class="rating-count">
+                Рейтинг: 8,9
+              </p>
+            </div>
       </div>
-      <div class="apartments-result">
-        
+
+      <div class="hotel-3">
+        <div class="hotel-3-picture">
+          <img src="#" alt="villas" width="20" height="20">
+        </div>
+        <div class="villas">
+          <b class="hotel-3-name">Villas Poco Diablo</b>
+            <div class="hotel-3-left">
+                <p class="hotel-3-type">Апартаменты</p>
+                <input type="submit" value="Подробнее">
+            </div>
+            <div class="hotel-3-right">
+                <p class="hotel-3-price">От 4000 р.</p>
+                <input type="submit" value="Забронировать">
+            </div>
+        </div>
+            <div class="stars">
+              <img src="#" alt="star" width="20" height="20">
+              <img src="#" alt="star" width="20" height="20">
+              <img src="#" alt="star" width="20" height="20">
+            </div>
+            <div class="rating">
+              <p class="rating-count">
+                Рейтинг: 9,2
+              </p>
+            </div>
       </div>
     </section>
 
@@ -149,4 +206,5 @@
       <a href="#"><img src="#" alt="html-academy-logo" width="150" height="50"></a>
     </div>
   </footer>  
+  </body>
 </html>
