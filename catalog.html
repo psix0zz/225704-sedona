@@ -7,11 +7,7 @@
 
   <body>
     <header class="main-header">
-      <div class="logo">
-        <a href="index.html"><img src="#" alt="City-of-Sedona" width="150" height="50"></a>
-      </div>
-
-      <div class="container">
+          <div class="container">
         <nav class="main-navigation">
           <ul>
             <li>
@@ -19,6 +15,9 @@
             </li>
             <li>
               <a href="#">Фото и видео</a>
+            </li>
+            <li>
+                <a href="index.html"><img src="#" alt="City-of-Sedona" width="150" height="50"></a>
             </li>
             <li>
               <a href="#">Карта штата</a>
@@ -38,13 +37,13 @@
         <span>инфраструктура</span>
         <ul>
           <li>
-            <label>Бассейн<input type="checkbox" name="pool" checked>
+            <label>Бассейн<input type="checkbox" name="pool" checked></label>
           </li>
           <li>
-            <label>Паркоква<input type="checkbox" name="parking">
+            <label>Паркоква<input type="checkbox" name="parking"></label>
           </li>
           <li>
-            <label>Wi-Fi<input type="checkbox" name="wi-fi">
+            <label>Wi-Fi<input type="checkbox" name="wi-fi"></label>
           </li>
         </ul>
       </div>
@@ -53,20 +52,82 @@
         <span>тип жилья</span>
         <ul>
           <li>
-            <label>Гостиница<input type="checkbox" name="hotel" checked>
+            <label>Гостиница<input type="checkbox" name="hotel" checked></label>
           </li>
           <li>
-            <label>Мотель<input type="checkbox" name="Motel" checked>
+            <label>Мотель<input type="checkbox" name="motel" checked></label>
           </li>
           <li>
-            <label>Апартаменты<input type="checkbox" name="Apartments" checked>
+            <label>Апартаменты<input type="checkbox" name="apartments" checked></label>
           </li>
         </ul>
+      </div>
+
+      <div class="price-per-day">
+        <b>Стоимость в сутки (р):</b>
+          <div>
+            <input type="text" name="price" id="low">
+            <input type="text" name="price" id="high">   
+          </div>
+          <div class="count">
+            <label for="low"><span>.</span></label>
+            <label for="high"><span>.</span></label>
+          </div>
       </div>
 
       <input type="submit" value="Показать">
     </form>
     
+  </main class="results">
+
+    <div class="found">
+      <b>Найдено: 3</b>
+    </div>
+
+    <div class="sort">
+      <p>Сортировка</p>
+        <ul>
+          <li>
+            <a href="#">по цене</a>
+          </li>
+          <li>
+            <a href="#">по типу</a>
+          </li>
+          <li>
+            <a href="#">по рейтингу</a>
+          </li>
+        </ul>
+
+      <div class="buttons">
+            <a href="#"><img src="#" alt="top-top" width="20" height="20"></a>
+            <a href="#"><img src="#" alt="top-bot" width="20" height="20"></a>
+      </div>
+    </div>
+
+    <section class="search-results">
+      <div class="hotel-result">
+        <div class="hotel-picture">
+          <img src="#" alt="Отель" width="20" height="20">
+        </div>
+        <div class="hotel-name">
+          <b>AMARA RESORT & SPA</b>
+            <div class="">
+              
+            </div>
+        </div>
+
+
+
+        
+      </div>
+      <div class="motel-result">
+        
+      </div>
+      <div class="apartments-result">
+        
+      </div>
+    </section>
+
   </main>
 
   <footer class="main-footer">

@@ -7,11 +7,7 @@
 
   <body>
     <header class="main-header">
-      <div class="logo">
-        <a href="index.html"><img src="#" alt="City-of-Sedona" width="150" height="50"></a>
-      </div>
-
-      <div class="container">
+          <div class="container">
         <nav class="main-navigation">
           <ul>
             <li>
@@ -19,6 +15,9 @@
             </li>
             <li>
               <a href="#">Фото и видео</a>
+            </li>
+            <li>
+                <a href="index.html"><img src="#" alt="City-of-Sedona" width="150" height="50"></a>
             </li>
             <li>
               <a href="#">Карта штата</a>
@@ -29,7 +28,7 @@
           </ul>
         </nav>
       </div>
-    </header>
+    </header>  
 
     <main class="container">
       <section class="town">
@@ -37,11 +36,11 @@
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
 
-      <div class="1st-reason">
+      <div class="main-reason">
         <div class="reason">
           <b class="title">Настоящий городок</b>
-          <p> -№1- <br>
-          Седона - не аттракцион для туристов, там течет своя жизнь </p>
+          <p> -№1- </p>
+          <p>Седона - не аттракцион для туристов, там течет своя жизнь </p>
         </div>
         <div class="reason-picture">
           <img src="#" alt="Настоящий городок" width="150" height="50">
@@ -50,34 +49,31 @@
     
       <section class="features">
         <div class="feature-housing">
-          <img src="#" alt="housing" width="150" height="50"><br>
           <b class="feature-name">Жилье</b>
           <p class="feature-text">Мы рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
         <div class="features-food">
-          <img src="#" alt="food" width="150" height="50"><br>
           <b class="feature-name">Еда</b>
           <p class="feature-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
         <div class="features-souvenirs">
-          <img src="#" alt="souvenirs" width="150" height="50"><br>
           <b class="feature-name">Сувениры</b>
           <p class="feature-text">Не только китайского, но и местного производства!</p>
         </div>
       </section>     
       
-      <div class="2nd-reason">
-        <div class="reason">
-          <b class="title">Там есть мост дьявола</b>
-          <p> -№2- <br>
-          Да, по нему можно пройти! Если конечно вы осмелитесь </p>
-        </div>
+      <div class="main-reason">
         <div class="reason-picture">
           <img src="#" alt="Мост дьявола" width="150" height="50">
-        </div>  
+        </div>
+        <div class="reason">
+          <b class="title">Там есть мост дьявола</b>
+          <p> -№2- </p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь </p>
+        </div>   
       </div>
 
-      <div class="reasons">
+      <div class="reasons-bot">
         <div class="reasons3-5">
           <div class="reason-3">
             <b class="reason-name">Небольшая площадь</b>
@@ -104,12 +100,12 @@
         </div>
 
         <section class="search-date">
-          <h2>Поиск гостиницы с Седоне</h2><br>
+          <h2>Поиск гостиницы с Седоне</h2>
             <form action="#" method="get">
-              <p>Дата заезда:<input type="text" name="calendar"><p>
-              <p>Дата выезда:<input type="text" name="calendar"><p>
-              <p>Взрослые<input type="text" name="count">
-                 Дети<input type="text" name="count"></p>
+              <label for="in">Дата заезда:<input type="text" name="calendar" id="in"></label><br>
+              <label for="out">Дата выезда:<input type="text" name="calendar" id="out"><label><br>
+              <label for="adults">Взрослые<input type="text" name="count" id="adults"> 
+              <label for="children">Дети<input type="text" name="count" id="children"></label>
               <input type="submit" value="Найти">
             </form>
         </section>
