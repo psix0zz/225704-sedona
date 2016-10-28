@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
                                 <!--Хедер-->
   <body>
     <header class="main-header">
-            <nav class="main-navigation">
+        <div class="main-navigation">
+            <nav>
               <ul class="navigation">
                 <li class="paragraph">
                   <a href="#">Информация</a>
@@ -15,8 +17,8 @@
                 <li class="paragraph">
                   <a href="#">Фото и видео</a>
                 </li>
-                <li class="paragraph">
-                    <a href="index.html"><img src="#" alt="City-of-Sedona" width="150" height="50"></a>
+                <li class="main-logo">
+                    <a href="index.html"><img src="img/sedona-logo.png" alt="City-of-Sedona" width="138" height="70"></a>
                 </li>
                 <li class="paragraph">
                   <a href="#">Карта штата</a>
@@ -26,72 +28,78 @@
                 </li>
               </ul>
             </nav>
+        </div>    
     </header>  
                            <!--Слоган-->
+    <div class="bid-image">
+      <img src="img/intro.jpg" alt="Интро">-->   <!--РАСКОММЕНТИТЬ КАРТИАНКУ!!!-->
+    </div>
     <main class="container">
       <section class="town">
-        <h1 class="town-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p class="town-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <h1 class="town-title">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
+        <span class="town-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
       </section>
                             <!--Первая причина - это ты ;DD-->
       <div class="main-reason">
         <div class="reason">
-          <b class="reason-title">Настоящий городок</b>
-          <p  class="reason-title-text"> -№1- </p>
-          <p>Седона - не аттракцион для туристов, там течет своя жизнь </p>
+          <span class="reason-title">Настоящий городок</span>
+          <span  class="reason-title-text"> -№1- <br>
+          Седона - не аттракцион для туристов, там течет своя жизнь</span>
         </div>
         <div class="reason-picture">
-          <img src="#" alt="Настоящий городок" width="150" height="50">
+          <img src="img/reason-1.jpg" alt="Настоящий городок" width="512" height="256">
         </div>  
+        <div class="clear">
+        </div>
       </div>
                                 <!--Приемущества, ништячки-->
       <section class="features">
         <div class="feature-box">
-          <b class="feature-name">Жилье</b>
+          <span class="feature-name">Жилье</span>
           <p class="feature-text">Мы рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
         <div class="features-box">
-          <b class="feature-name">Еда</b>
+          <span class="feature-name">Еда</span>
           <p class="feature-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
         <div class="features-box">
-          <b class="feature-name">Сувениры</b>
+          <span class="feature-name">Сувениры</span>
           <p class="feature-text">Не только китайского, но и местного производства!</p>
         </div>
       </section>     
                               <!--А вторая - все твои мечты ;DDD-->
       <div class="main-reason">
         <div class="reason-picture">
-          <img src="#" alt="Мост дьявола" width="150" height="50">
+          <img src="img/reason-2.jpg" alt="Настоящий городок" width="512" height="256">
         </div>
         <div class="reason">
-          <b class="reason-title">Там есть мост дьявола</b>
-          <p  class="reason-title-text"> -№2- </p>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь </p>
+          <span class="reason-title">Там есть мост дьявола</span>
+          <span  class="reason-title-text"> -№2- <br>
+          Да, по нему можно пройти! Если конечно вы осмелитесь </span>
         </div>   
       </div>
                           <!--Причины 3 -5 (на этих причинах Игорь покинул нас)-->
       <div class="other-reasons">
           <div class="reason3-5">
-            <b class="reason-name">Небольшая площадь</b>
-            <p class="reason-text"> -№3- </p>
-            <p>Все достопримечательности находятся очень близко</p>
+            <span class="other-reason-name">Небольшая площадь</span>
+            <span class="other-reason-number"> -№3- </span>
+            <span class="other-reason-text">Все достопримечательности находятся очень близко</span>
           </div>
           <div class="reason3-5">
-            <b class="reason-name">Красивая дорога</b>
-            <p class="reason-text"> -№4- </p>
-            <p>Ехать в Седоду из Лас-Вегаса совсем не скучно!</p>
+            <span class="other-reason-name">Красивая дорога</span>
+            <span class="other-reason-number"> -№4- </span>
+            <span class="other-reason-text">Ехать в Седоду из Лас-Вегаса совсем не скучно!</span>
           </div>
           <div class="reason3-5">
-            <b class="reason-name">Мало туристов</b>
-            <p class="reason-text"> -№5- </p>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
+            <span class="other-reason-name">Мало туристов</span>
+            <span class="other-reason-number"> -№5- </span>
+            <span class="other-reason-text">Большинство едет в Гранд Каньон и толпится там</span>
           </div>
       </div>
 
         <div class="interest">
-          <b class="interest-head">ЗАИНТЕРЕСОВАЛИСЬ?</b>
-          <p>Укажите продполагаемые даты поездки,<br>
+          <span class="interest-head">ЗАИНТЕРЕСОВАЛИСЬ?</span>
+          <p class="interest-text">Укажите продполагаемые даты поездки,<br>
              и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
         </div>
                             <!--Поиск гостиницы-->
