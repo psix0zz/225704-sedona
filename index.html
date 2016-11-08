@@ -5,6 +5,7 @@
     <title>Седона</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="http://allfont.ru/allfont.css?fonts=pt-sans" rel="stylesheet" type="text/css">
   </head>
                                 <!--Хедер-->
   <body>
@@ -33,7 +34,7 @@
 
     <main class="container">
       <div class="bid-image">
-        <img src="img/intro.jpg" alt="Интро" width="768px" height="513px">   <!--РАСКОММЕНТИТЬ КАРТИАНКУ!-->
+        <img src="img/intro.jpg" alt="Интро" width="768" height="513">   <!--РАСКОММЕНТИТЬ КАРТИАНКУ!-->
       </div>
       <section class="town">
         <h1 class="town-title">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
@@ -56,13 +57,13 @@
       <section class="features">
         <div class="feature-box">
           <span class="feature-name">Жилье</span>
-          <p class="feature-text">Мы рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <p class="feature-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
-        <div class="features-box">
+        <div class="feature-box">
           <span class="feature-name">Еда</span>
           <p class="feature-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
-        <div class="features-box">
+        <div class="feature-box">
           <span class="feature-name">Сувениры</span>
           <p class="feature-text">Не только китайского, но и местного производства!</p>
         </div>
@@ -73,7 +74,7 @@
           <img src="img/reason-2.jpg" alt="Настоящий городок" width="512" height="256">
         </div>
         <div class="reason">
-          <span class="reason-title">Там есть мост дьявола</span>
+          <span class="reason-title">Там есть<br> мост дьявола</span>
           <span class="reason-title-number"> -№2-</span>
           <span class="reason-title-text">Да, по нему можно пройти! Если конечно вы осмелитесь </span>
         </div>   
@@ -83,7 +84,7 @@
           <div class="reason3-5">
             <span class="other-reason-name">Небольшая площадь</span>
             <span class="other-reason-number"> -№3- </span>
-            <span class="other-reason-text">Все достопримечательности находятся очень близко</span>
+            <span class="other-reason-text">Все достопримеча-тельности находятся очень близко</span>
           </div>
           <div class="reason3-5">
             <span class="other-reason-name">Красивая дорога</span>
@@ -101,21 +102,38 @@
           <span class="interest-head">ЗАИНТЕРЕСОВАЛИСЬ?</span>
           <p class="interest-text">Укажите продполагаемые даты поездки,<br>
              и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+          <div class="holels-search">
+            <h2>Поиск гостиницы с Седоне</h2>
+          </div>
         </div>
                             <!--Поиск гостиницы-->
         <section class="search-date">
-          <h2>Поиск гостиницы с Седоне</h2>
+          <div class="map">
+            <img src="img/map.jpg">
+          </div>
+          <div class="search-window">
             <form action="#" method="get">
-              <label for="in">Дата заезда:</label>
-              <input type="text" name="calendar" id="in"><br>
-              <label for="out">Дата выезда:</label>
-              <input type="text" name="calendar" id="out"><br>
-              <label for="adults">Взрослые</label>
-              <input type="text" name="count" id="adults">
-              <label for="children">Дети</label>
-              <input type="text" name="count" id="children">
+              <div class="date-in">
+                <label for="in">Дата заезда:</label>
+                <input type="text" name="calendar" id="in">
+              </div>
+              <div class="date-out">
+                <label for="out">Дата выезда:</label>
+                <input type="text" name="calendar" id="out">
+              </div>
+              <div class="adults-children">
+                <div class="adults">
+                  <label for="adults">Взрослые:</label>
+                  <input type="text" name="count" id="adults">
+                </div>
+                <div class="children">
+                  <label for="children">Дети:</label>
+                  <input type="text" name="count" id="children">
+                </div>
+              </div>
               <input type="submit" value="Найти">
             </form>
+          </div>    
         </section>
     </main>
                       <!--Подвальчик =)-->

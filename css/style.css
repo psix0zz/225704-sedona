@@ -1,7 +1,6 @@
 body {
 	width: 768px;
 	font-family: "pt sans";
-	font-size: 14px;
 	text-transform: uppercase;
 	margin: 0 auto;
 	padding: 0;
@@ -30,6 +29,7 @@ body {
 	display: block;
 	padding: 15px 0px;
 	width: 154px;
+	color: #000000;
 
 }  
 
@@ -39,7 +39,6 @@ body {
   	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
-	color: #000000;
 }
 
 li:nth-child(2) {
@@ -85,19 +84,21 @@ h1 {
 }
 .town-title {
 	display: block;
-	margin-bottom: 32px;
+	margin-bottom: 30px;
 }
 
 .town-reasons {
 	display: block;
 	color: #333333;
-
+	font-size: 14px;
+	line-height: 26px;
 
 }
            				 /* БЛОКИ ПРИЧИН!! БОЛЬШИЕ ТАКИЕ!! С КАРТИНКАМИ КОТОРЫЕ!!!! */
 .main-reason {
 	color: #ffffff;
 	display: flex;
+	height: 256px;
 }
 
 .reason {
@@ -111,6 +112,7 @@ h1 {
 	width: 512px;
 }
 .reason-title {
+	padding: 0px 50px;
 	display: block;
 	font-size: 21px;
 	line-height: 21px;
@@ -137,12 +139,15 @@ h1 {
 }
 
 
+
+
 						/* БЛОК ПРИЕМУЩЕСТВА!!! НИШТЯЧКИ!! ЭТО КОТОРЫЕ ЕДА ТАМ НУ И ВСЕ ТАКОЕ!!! */  
 
 
 .features {
 	  	font-size: 0
 }
+
 .feature-box {
 	display: inline-block;
 	max-width: 256px;
@@ -150,14 +155,18 @@ h1 {
 }
 
 .feature-name {
+	padding-top: 160px;
+	text-align: center;
 	display: block;
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: bold;
-	  	vertical-align: top;
+	 vertical-align: top;
 }
 
 .feature-text {
+	padding: 10px 47px 0px;
+	text-align: center;
 	display: block;
 	font-size: 14px;
 	line-height: 21px;
@@ -165,28 +174,64 @@ h1 {
 	vertical-align: top;
 }
 
+.features div:nth-child(2) .feature-text {
+	padding: 10px 49px 0px;
+}
+
 						/* БЛОК ПРИЧИН 3 - 5 !!! */
+
+.reason3-5 {
+	display: inline-block;
+	width: 256px;
+	height: 256px;
+}
+
+
 .other-reasons {
 	background-color: #eeeeee;
+	font-size: 0px;
 }
 
 .other-reason-name {
+	display: block;
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: bold;
+	text-align: center;
+	padding: 45px 50px 25px;
+	vertical-align: top;
 }
 
 .other-reason-number,
 .other-reason-text {
+	display: block;
+	text-align: center;
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
-
-
-
 }
+.other-reason-number {
+	margin-bottom: 20px;
+}
+
+.other-reason-text {
+	padding: 0px 50px 0px;
+	margin-top: 0px;
+}	
+
+.other-reasons div:nth-child(2) .other-reason-text {
+	padding: 0px 60px 0px;
+}
+
  						/* БЛОК ЗАИНТЕРЕСОВАЛИСЬ */
+
+
+.interest. {
+	height: 290px;
+}
 .interest-head {
+	margin-top: 55px;
+	display: block;
 	font-size: 30px;
 	line-height: 24px;
 	font-weight: bold;
@@ -194,17 +239,113 @@ h1 {
 }
 
 .interest-text {
+	display: block;
 	font-size: 14px;
 	line-height: 24px;
 	color: #333333;
 	text-align: center;
+	margin-bottom: 45px;
+	margin-top: 30px;
+}
+.holels-search {
+	width: 568px;
+	height: 86px;
+	margin: 0 auto;
+	background: #766357;
+	text-align: center;
 }
 
 h2 {
+	padding-top: 30px;
+	font-weight: bold;
+	display: block;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
 	color: #ffffff;
-	background: #766357;
-	text-align: center;
+
+}
+
+						/* БЛОК ПОИСКА ГОСТИНИЦЫ!!!! */
+
+.search-date {
+	height: 473px;
+	position: relative;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.search-window {
+	position: absolute;
+	top: 0px;
+	left: 100px;
+	height: 395px; 
+	width: 568px;
+	background-color: #ffffff;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.date-in {
+	margin-top: 55px;
+	margin-bottom: 29px;
+	margin-left: 56px;
+}
+
+.date-out {
+	margin-bottom: 29px;
+	margin-left: 53px;
+	margin-bottom: 29px;
+}
+
+.adults-children {
+	width: 568px;
+}
+.adults {
+	display: inline-block;
+	margin-left: 55px;
+	margin-right: 47px;
+}
+.children {
+	display: inline-block;
+}
+
+.adults label {
+	margin-right: 42px;
+}
+.children label {
+	margin-right: 26px;
+
+}
+
+.date-in label,
+.date-out label {
+	margin-right: 25px;
+}
+
+
+.search-window input {
+	height: 38px;
+	border: 0px;
+	background-color: #f2f2f2;
+	text-indent: 15px;
+}
+
+.date-in input,
+.date-out input {
+	width: 346px;
+
+}
+
+.adults input,
+.children input {
+	width: 114px;
+}
+						/* ПОДВАЛЬЧИК РОДИМЫЙ!! */
+
+.main-footer {
+	position: absolute;
+	opacity: 90%;
 }
