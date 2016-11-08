@@ -4,6 +4,7 @@ body {
 	text-transform: uppercase;
 	margin: 0 auto;
 	padding: 0;
+	position: relative;
 }
 
 
@@ -268,6 +269,11 @@ h2 {
 
 						/* БЛОК ПОИСКА ГОСТИНИЦЫ!!!! */
 
+
+.map {
+	height: 593px;
+	width: 768px;
+}
 .search-date {
 	height: 473px;
 	position: relative;
@@ -343,9 +349,56 @@ h2 {
 .children input {
 	width: 114px;
 }
+
+button {
+	color: #ffffff;
+	display: inline-block;
+	width: 464px;
+	height: 58px;
+	margin-left: 55px;
+	margin-top: 54px;
+	border: 0px;
+    vertical-align: top;
+    text-align: center;
+    background-color: #81b3d2;
+}
 						/* ПОДВАЛЬЧИК РОДИМЫЙ!! */
 
 .main-footer {
-	position: absolute;
+	height: 120px;
+	width: 768px;
+	background-color: #ffffff;
 	opacity: 90%;
+	font-size: 0px;
+	vertical-align: top;
+}
+
+.hashtag {
+	display: inline-block;
+	font-size: 21px;
+	width: 256px;
+	height: 120px;
+	text-align: center;
+	background-color: #81b3d2;
+}
+
+.hashtag a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.social {
+	display: inline-block;
+	width: 256px;
+	height: 120px;
+	background-color: #81b3d2;
+
+}
+
+.designer {
+	display: inline-block;
+	width: 256px;
+	height: 120px;
+	font-size: 14px;
+	line-height: 26px;
 }
