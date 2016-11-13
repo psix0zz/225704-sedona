@@ -5,7 +5,7 @@
     <title>Седона</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="http://allfont.ru/allfont.css?fonts=pt-sans" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" type="text/css">
   </head>
                                 <!--Хедер-->
   <body>
@@ -37,14 +37,14 @@
         <img src="img/intro.jpg" alt="Интро" width="768" height="513">   <!--РАСКОММЕНТИТЬ КАРТИАНКУ!-->
       </div>
       <section class="town">
-        <h1 class="town-title">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
+        <h1 class="town-title">СЕДОНА — небольшой городок в АРИЗОНЕ,<br> заслуживающий большего!</h1>
         <span class="town-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
       </section>
                             <!--Первая причина - это ты ;DD-->
       <div class="main-reason">
         <div class="reason">
           <span class="reason-title">Настоящий<br>городок</span>
-          <span class="reason-title-number"> -№1- </span>
+          <span class="reason-title-number"> — №1 — </span>
           <span class="reason-title-text"> Седона - не аттракцион для туристов, там течет своя жизнь</span>
         </div>
         <div class="reason-picture">
@@ -75,7 +75,7 @@
         </div>
         <div class="reason">
           <span class="reason-title">Там есть<br> мост дьявола</span>
-          <span class="reason-title-number"> -№2-</span>
+          <span class="reason-title-number"> — №2 —</span>
           <span class="reason-title-text">Да, по нему можно пройти! Если конечно вы осмелитесь </span>
         </div>   
       </div>
@@ -83,17 +83,17 @@
       <div class="other-reasons">
           <div class="reason3-5">
             <span class="other-reason-name">Небольшая площадь</span>
-            <span class="other-reason-number"> -№3- </span>
+            <span class="other-reason-number"> — №3 — </span>
             <span class="other-reason-text">Все достопримеча-тельности находятся очень близко</span>
           </div>
           <div class="reason3-5">
             <span class="other-reason-name">Красивая дорога</span>
-            <span class="other-reason-number"> -№4- </span>
+            <span class="other-reason-number"> — №4 — </span>
             <span class="other-reason-text">Ехать в Седоду из Лас-Вегаса совсем не скучно!</span>
           </div>
           <div class="reason3-5">
             <span class="other-reason-name">Мало туристов</span>
-            <span class="other-reason-number"> -№5- </span>
+            <span class="other-reason-number"> — №5 — </span>
             <span class="other-reason-text">Большинство едет в Гранд Каньон и толпится там</span>
           </div>
       </div>
@@ -108,31 +108,32 @@
         </div>
                             <!--Поиск гостиницы-->
         <section class="search-date">
-          <div class="map">
-            <img src="img/map.jpg" width="768" height="593">
-          </div>
-          <div class="search-window">
-            <form action="#" method="get">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.8875856905!2d-112.35544166532924!3d34.85437343108555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1479056169489" width="768" height="593" style="border:0" allowfullscreen>
+        </iframe>
+           <div class="search-window">
+            <form action="catalog.html" method="get">
               <div class="date-in">
                 <label for="in">Дата заезда:</label>
-                <input type="text" name="calendar" id="in">
+                <input type="text" name="calendar" value="24 апреля 2016" id="in">
+                <div class="calendar-icon"></div>
               </div>
               <div class="date-out">
                 <label for="out">Дата выезда:</label>
-                <input type="text" name="calendar" id="out">
+                <input type="text" name="calendar" value="4 июля 2016" id="out">
               </div>
               <div class="adults-children">
                 <div class="adults">
                   <label for="adults">Взрослые:</label>
-                  <input type="text" name="count" id="adults">
+                  <input type="text" name="count" value="2" id="adults">
                 </div>
                 <div class="children">
                   <label for="children">Дети:</label>
-                  <input type="text" name="count" id="children">
+                  <input type="text" name="count" value="0" id="children">
                 </div>
               </div>
               <button type="submit">
-                  НАЙТИ
+                <span class="find">Найти</span>
+                  
               </button>
             </form>
           </div>    
@@ -155,6 +156,19 @@
         <p>WEBSITE BY</p>
         <a href="#"><img src="#" alt="html-academy-logo" width="150" height="50"></a>
       </div>
-    </footer>    
+    </footer>
+
+    <script>
+        var link = document.querySelector(".holels-search");
+        var popup = document.querySelector(".search-window");
+        popup.classList.add("hidden");
+
+        link.addEventListener("click", function(event) {
+          event.preventDefault();
+          console.log("Click!")
+          popup.classList.toggle("search-window-show");
+      });
+    </script>
+
   </body>
 </html>

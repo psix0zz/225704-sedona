@@ -1,24 +1,24 @@
+
 body {
 	width: 768px;
-	font-family: "pt sans";
+	font-size : 14px;  
+	font-family: "Pt Sans Bold", "Pt Sans";
+	font-style: normal;
+	font-weight: normal;
 	text-transform: uppercase;
 	margin: 0 auto;
 	padding: 0;
 	position: relative;
 }
-
-
 							/* ХЕДЕР!! ЛОГОТИП ТОЖЕ ТУТ!! */ 
 
 
 .main-navigation {
 	width: 680px;
-	padding: 0 44px;
 	margin: 0 auto; 
 	position: relative;
 }
 .navigation {
-	min-height: 56px;
 	list-style: none;
 	margin: 0;
   	padding: 0;
@@ -28,26 +28,32 @@ body {
 .navigation a{
 	text-decoration: none;
 	display: block;
-	padding: 15px 0px;
 	width: 154px;
 	color: #000000;
-
 }  
+.navigation a:hover {
+	color: #81b3d2;
+}
+.navigation a:active {
+	color: #b2b2b2;
+}
 
 .paragraph {
+	padding: 15px 0px;
 	display: inline-block;
   	vertical-align: top;
   	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
+	height: 26px;
 }
 
-li:nth-child(2) {
+.navigation li:nth-child(2) {
 	margin-right: 62px;
 }
 
-li:nth-child(3),
-li:nth-child(4) {
+.navigation li:nth-child(3),
+.navigation li:nth-child(4) {
 	text-align: right;
 }
 
@@ -71,11 +77,8 @@ li:nth-child(4) {
 h1 {
 	font-size: 21px;
 	line-height: 26px;
+	font-family: inherit;
 	font-weight: bold;
-}
-
-.big-image {
-
 }
 
 .town {
@@ -85,7 +88,7 @@ h1 {
 }
 .town-title {
 	display: block;
-	margin-bottom: 30px;
+	margin-bottom: 34px;
 }
 
 .town-reasons {
@@ -162,11 +165,11 @@ h1 {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: bold;
-	 vertical-align: top;
+	vertical-align: top;
 }
 
 .feature-text {
-	padding: 10px 47px 0px;
+	padding: 10px 45px 0px;
 	text-align: center;
 	display: block;
 	font-size: 14px;
@@ -205,6 +208,7 @@ h1 {
 
 .other-reason-number,
 .other-reason-text {
+	font-weight: bold;
 	display: block;
 	text-align: center;
 	font-size: 14px;
@@ -245,15 +249,18 @@ h1 {
 	line-height: 24px;
 	color: #333333;
 	text-align: center;
-	margin-bottom: 45px;
+	margin-bottom: 48px;
 	margin-top: 30px;
 }
+
+										/* БЛОК ПОИСКА ГОСТИНИЦЫ!!!! */
 .holels-search {
 	width: 568px;
 	height: 86px;
 	margin: 0 auto;
 	background: #766357;
 	text-align: center;
+		cursor: pointer;
 }
 
 h2 {
@@ -267,9 +274,6 @@ h2 {
 
 }
 
-						/* БЛОК ПОИСКА ГОСТИНИЦЫ!!!! */
-
-
 .map {
 	height: 593px;
 	width: 768px;
@@ -281,6 +285,8 @@ h2 {
 	line-height: 26px;
 	font-weight: bold;
 }
+	
+
 
 .search-window {
 	position: absolute;
@@ -294,10 +300,55 @@ h2 {
 	font-weight: bold;
 }
 
+.search-window-show {
+	visibility: visible;
+	animation: bounce 0.8s;
+}
+
+h2:hover {
+	cursor: pointer;
+}
+
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(600px);
+    opacity: 0.2;
+ }
+  70%  {
+    transform: translateY(-30px);
+    opacity: 0.5;
+  }
+  90%  {
+    transform: translateY(30px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 .date-in {
+	position: relative;
 	margin-top: 55px;
 	margin-bottom: 29px;
 	margin-left: 56px;
+}
+
+
+
+.calendar-icon {
+  content: "";
+  position: absolute;
+  top: 9px;
+  right: 60px;
+
+  width: 21px;
+  height: 22px;
+
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -10px -70px;
 }
 
 .date-out {
@@ -333,10 +384,20 @@ h2 {
 
 
 .search-window input {
-	height: 38px;
+	height: 34px;
 	border: 0px;
 	background-color: #f2f2f2;
 	text-indent: 15px;
+	font-weight: bold;
+}
+
+.search-window input:hover {
+	background-color: #ebebeb;
+}
+
+.search-window input:focus {
+	background-color: #ffffff;
+	outline: 2px solid #e5e5e5;
 }
 
 .date-in input,
@@ -345,9 +406,18 @@ h2 {
 
 }
 
+.find {
+	font-size: 21px
+	line-height: 26px;
+	font-style: bold;
+	font-face: "Pt Sans Bold";
+	text-transform: uppercase;
+
+}
+
 .adults input,
 .children input {
-	width: 114px;
+	width: 38px;
 }
 
 button {
@@ -365,6 +435,7 @@ button {
 						/* ПОДВАЛЬЧИК РОДИМЫЙ!! */
 
 .main-footer {
+	position: absolute;
 	height: 120px;
 	width: 768px;
 	background-color: #ffffff;
@@ -402,3 +473,4 @@ button {
 	font-size: 14px;
 	line-height: 26px;
 }
+
