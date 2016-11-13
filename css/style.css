@@ -113,6 +113,7 @@ h1 {
 }
 
 .reason-picture {
+	height: 256px;
 	width: 512px;
 }
 .reason-title {
@@ -435,7 +436,7 @@ button {
 						/* ПОДВАЛЬЧИК РОДИМЫЙ!! */
 
 .main-footer {
-	position: absolute;
+	margin-bottom: 50px;
 	height: 120px;
 	width: 768px;
 	background-color: #ffffff;
