@@ -22,7 +22,7 @@
                   <a href="#">Карта штата</a>
                 </li>
                 <li class="paragraph">
-                  <a href="#">Гостиницы</a>
+                  <a href="catalog.html">Гостиницы</a>
                 </li>
               </ul>
               <div class="main-logo">
@@ -131,9 +131,8 @@
                   <input type="text" name="count" value="0" id="children">
                 </div>
               </div>
-              <button type="submit">
+              <button class="find-button" type="submit">
                 <span class="find">Найти</span>
-                  
               </button>
             </form>
           </div>    
@@ -141,34 +140,21 @@
     </main>
                       <!--Подвальчик =)-->
     <footer class="main-footer">
-
       <div class="hashtag">
-        <a href="#"><b>#VISITSEDONA</b></a>
+        <a class="" href="#"><b>#VISITSEDONA</b></a>
       </div>
-
       <div class="social">
-          <a href="#"><img src="#" alt="twitter" width="17" height="15"></a>
-          <a href="#"><img src="#" alt="facebook" width="17" height="15"></a>
-          <a href="#"><img src="#" alt="youtube" width="17" height="15"></a> 
+          <a class="social-btn social-btn-tw" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-yt" href="#"></a> 
       </div>
-
       <div class="designer">
-        <p>WEBSITE BY</p>
-        <a href="#"><img src="#" alt="html-academy-logo" width="150" height="50"></a>
+        <span class="copyright">WEBSITE BY</span>
+        <a class="hta-icon" href="https://htmlacademy.ru/"></a>
       </div>
     </footer>
 
-    <script>
-        var link = document.querySelector(".holels-search");
-        var popup = document.querySelector(".search-window");
-        popup.classList.add("hidden");
-
-        link.addEventListener("click", function(event) {
-          event.preventDefault();
-          console.log("Click!")
-          popup.classList.toggle("search-window-show");
-      });
-    </script>
+    <script src="js/script.js"></script>
 
   </body>
 </html>

@@ -2,7 +2,7 @@
 body {
 	width: 768px;
 	font-size : 14px;  
-	font-family: "Pt Sans Bold", "Pt Sans";
+	font-family: "Pt Sans";
 	font-style: normal;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -89,10 +89,12 @@ h1 {
 .town-title {
 	display: block;
 	margin-bottom: 34px;
+	vertical-align: top;
 }
 
 .town-reasons {
 	display: block;
+
 	color: #333333;
 	font-size: 14px;
 	line-height: 26px;
@@ -130,6 +132,7 @@ h1 {
 
 .reason-title-text {
 	display: block;
+	font-weight: inherit;
 	line-height: 21px;
 	width: 180px;
 	margin: 0 auto;
@@ -138,6 +141,7 @@ h1 {
 
 .reason-title-number {
 	display: block;
+	font-weight: normal;
 	line-height: 21px;
 	width: 180px;
 	margin: 0 auto;
@@ -210,7 +214,7 @@ h1 {
 
 .other-reason-number,
 .other-reason-text {
-	font-weight: bold;
+	font-weight: normal;
 	display: block;
 	text-align: center;
 	font-size: 14px;
@@ -262,7 +266,7 @@ h1 {
 	margin: 0 auto;
 	background: #766357;
 	text-align: center;
-		cursor: pointer;
+	cursor: pointer;
 }
 
 h2 {
@@ -274,6 +278,9 @@ h2 {
 	font-weight: bold;
 	color: #ffffff;
 
+}
+h2:hover {
+	cursor: pointer;
 }
 
 .map {
@@ -287,8 +294,6 @@ h2 {
 	line-height: 26px;
 	font-weight: bold;
 }
-	
-
 
 .search-window {
 	position: absolute;
@@ -302,27 +307,27 @@ h2 {
 	font-weight: bold;
 }
 
+.search-window-hidden {
+  display: none;
+  animation: close;
+}
 .search-window-show {
-	visibility: visible;
+ 	display: block;
 	animation: bounce 0.8s;
 }
 
-h2:hover {
-	cursor: pointer;
-}
-
-
 @keyframes bounce {
   0%   {
-    transform: translateY(600px);
+    transform: translateY(200px);
+    transform: translateX(200px);
     opacity: 0.2;
  }
   70%  {
-    transform: translateY(-30px);
+    transform: translateY(-20px);
     opacity: 0.5;
   }
   90%  {
-    transform: translateY(30px);
+    transform: translateY(15px);
     opacity: 0.8;
   }
   100% {
@@ -330,15 +335,12 @@ h2:hover {
   }
 }
 
-
 .date-in {
 	position: relative;
 	margin-top: 55px;
 	margin-bottom: 29px;
 	margin-left: 56px;
 }
-
-
 
 .calendar-icon {
   content: "";
@@ -392,10 +394,34 @@ h2:hover {
 	text-indent: 15px;
 	font-weight: bold;
 }
+.find-button {
+	color: #ffffff;
+	display: inline-block;
+	width: 464px;
+	height: 58px;
+	margin-left: 55px;
+	margin-top: 54px;
+	border: 0px;
+    vertical-align: top;
+    text-align: center;
+    background-color: #81b3d2;
+    cursor: pointer;
+}
+
+.find-button:hover {
+	background-color: #669ec0;
+	cursor: pointer;
+}
+.find-button:active {
+	background-color: #669ec0;
+	color: #94b9d2;
+}
 
 .search-window input:hover {
 	background-color: #ebebeb;
 }
+
+
 
 .search-window input:focus {
 	background-color: #ffffff;
@@ -409,12 +435,10 @@ h2:hover {
 }
 
 .find {
-	font-size: 21px
+	font-size: 21px;
 	line-height: 26px;
-	font-style: bold;
-	font-face: "Pt Sans Bold";
+	font-weight: bold;
 	text-transform: uppercase;
-
 }
 
 .adults input,
@@ -422,24 +446,11 @@ h2:hover {
 	width: 38px;
 }
 
-button {
-	color: #ffffff;
-	display: inline-block;
-	width: 464px;
-	height: 58px;
-	margin-left: 55px;
-	margin-top: 54px;
-	border: 0px;
-    vertical-align: top;
-    text-align: center;
-    background-color: #81b3d2;
-}
-						/* ПОДВАЛЬЧИК РОДИМЫЙ!! */
+
+						/* ПОДВАЛЬЧИК РОДИМЫЙ!! 
 
 .main-footer {
 	margin-bottom: 50px;
-	height: 120px;
-	width: 768px;
 	background-color: #ffffff;
 	opacity: 90%;
 	font-size: 0px;
@@ -447,7 +458,7 @@ button {
 }
 
 .hashtag {
-	display: inline-block;
+	float: left;
 	font-size: 21px;
 	width: 256px;
 	height: 120px;
@@ -461,7 +472,7 @@ button {
 }
 
 .social {
-	display: inline-block;
+	float: left;
 	width: 256px;
 	height: 120px;
 	background-color: #81b3d2;
@@ -469,10 +480,209 @@ button {
 }
 
 .designer {
-	display: inline-block;
+	float: right;
 	width: 256px;
 	height: 120px;
 	font-size: 14px;
 	line-height: 26px;
 }
 
+
+*/
+ 				/* SEDONA HOTELS */ 
+
+.hotels-container {
+
+}
+				/* ФОРМА ПОИСКА ОТЕЛЕЙ*/
+
+.search-hotels {
+	background-image: url(../img/holes-background.jpg);
+	max-height: 217px;
+	overflow: hidden;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+}
+fieldset {
+	border: none;
+}
+
+legend {
+	font-size: 16px;
+}
+
+.infrastructure {
+	display: inline-block;
+	margin: 27px 100px 0px 0px;
+	padding: 0px 0px 0px 46px;
+	width: 140px;
+	height: 217px;
+	vertical-align: top;
+}
+.infrastructure label {
+
+}
+
+.housing-type {
+	display: inline-block;
+	margin: 27px 0px 0px 0px;
+	padding: 0px;
+	width: 140px;
+	height: 217px;
+	vertical-align: top;
+}
+
+.price {
+	display: inline-block;
+	width: 230px;
+	height: 217px;
+	margin: 27px 0px 0px 0px;
+	vertical-align: top;
+}
+				/* СОРТИРОВКА НАЙДЕННЫХ ОТЕЛЕЙ */
+.found {
+	display: inline-block;
+	margin-left: 45px;
+	margin-right: 44px;
+	margin-top: 29px;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+
+}
+
+.sorting { 
+	height: 86px;
+}
+.sort {
+	list-style: none;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+	margin: 35px 0px 0px 0px;
+	padding: 0;
+	vertical-align: top;
+}
+
+.sort-title {
+	display: inline-block;
+	margin-right: 37px;
+	vertical-align: middle;
+
+}
+.sort-item {
+	display: inline-block;
+	color: #cacaca;
+	margin-right: 30px;
+	vertical-align: top;
+	border-bottom: 1px dotted #81b3d2;
+
+}
+.sort-item:last-child {
+	margin-right: 125px;
+}
+
+.active {
+	border-bottom: none;
+	color: #81b3d2;
+}
+
+.buttons {
+	display: inline-block;
+}
+
+				/* РЕЗУЛЬТАТЫ ОТЕЛЕЙ */
+
+.search-results {
+	border-top: 1px solid #e5e5e5; 
+}
+
+.hotel-description {
+	display: inline-block;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-intro {
+	width: 676px;
+	height: 90px;
+	margin: 30px auto;
+	margin-left: 46px;
+}
+
+.hotel-picture {
+	display: inline-block;
+	vertical-align: top;
+	height: 90px;
+}
+
+.hotel-info {
+	display: inline-block;
+	margin-left: 28px;
+	width: 270px;
+}
+
+.hotel-name {
+	display: inline-block;
+	margin-top: -3px;
+	margin-bottom: 3px;
+	text-decoration: none;
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.hotel-top {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	padding: 0px;
+	padding-top: 6px;
+	padding-bottom: 15px;
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
+}
+
+.hotel-type {
+	display: inline-block;
+	width: 111px;
+}
+
+.more {
+	display: inline-block;
+	text-decoration: none;
+	width: 93px;
+	padding-left: 16px; 
+	padding-top: 5px;
+	margin-right: 3px;
+	height: 23px;
+	font-weight: bold;
+	background-color: #81b3d2;
+	color: #ffffff;
+
+}
+.reserve {
+	display: inline-block;
+	text-decoration: none;
+	width: 125px;
+	padding-left: 17px; 
+	padding-top: 5px;
+	height: 23px;
+	font-weight: bold;
+	background-color: #766357;
+	color: #ffffff; 
+
+}
+
+.hotel-bottom {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.rating {
+	display: inline-block;
+}
