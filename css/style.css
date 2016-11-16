@@ -114,10 +114,17 @@ h1 {
 	text-align: center;
 }
 
-.reason-picture {
+.reason-picture1 {
 	background-color: #81b3d2;
 	height: 256px;
 	width: 512px;
+	background-image: url(../img/reason-1.jpg);
+}
+.reason-picture2 {
+	background-color: #81b3d2;
+	height: 256px;
+	width: 512px;
+	background-image: url(../img/reason-2.jpg);
 }
 .reason-title {
 	padding: 0px 50px;
@@ -318,16 +325,15 @@ h2:hover {
 
 @keyframes bounce {
   0%   {
-    transform: translateY(200px);
-    transform: translateX(200px);
+    transform: translateY(-200px);
     opacity: 0.2;
  }
   70%  {
-    transform: translateY(-20px);
+    transform: translateY(20px);
     opacity: 0.5;
   }
   90%  {
-    transform: translateY(15px);
+    transform: translateY(-15px);
     opacity: 0.8;
   }
   100% {
@@ -342,26 +348,38 @@ h2:hover {
 	margin-left: 56px;
 }
 
-.calendar-icon {
+.calendar-icon-in {
   content: "";
   position: absolute;
-  top: 9px;
-  right: 60px;
+  top: 8px;
+  right: 64px;
 
   width: 21px;
   height: 22px;
 
-  background: transparent url("../img/sprite.png") no-repeat;
-  background-position: -10px -70px;
+  background: #ff0000 url("../img/sprite.png") no-repeat;
 }
 
 .date-out {
-	margin-bottom: 29px;
+	position: relative;
 	margin-left: 53px;
-	margin-bottom: 29px;
+	margin-bottom: 31px;
+}
+
+.calendar-icon-out {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 64px;
+
+  width: 21px;
+  height: 22px;
+
+  background: #ff0000 url("../img/sprite.png") no-repeat;
 }
 
 .adults-children {
+	position: relative;
 	width: 568px;
 }
 .adults {
@@ -369,12 +387,107 @@ h2:hover {
 	margin-left: 55px;
 	margin-right: 47px;
 }
+
+.adults-plus {
+	content: "";
+	position: absolute;
+	left: 243px;
+	width: 38px;
+	cursor: pointer;
+	text-align: center;
+	padding-top: 5px;
+	color: #a9a9a9;
+	font-size: 24px;
+}
+
+.adults-plus:hover {
+	color: #000000;
+	cursor: pointer;
+}
+.adults-plus:active {
+	color: #81b3d2;
+	cursor: pointer;
+
+}
+.adults-minus {
+	content: "";
+	position: absolute;
+	left: 167px;
+	top: 4px;
+	width: 38px;
+	cursor: pointer;
+	text-align: center;
+	padding-top: 0px;
+	color: #a9a9a9;
+	font-size: 24px;
+}
+
+.adults-minus:hover {
+	color: #000000;
+	cursor: pointer;
+}
+.adults-minus:active {
+	color: #81b3d2;
+	cursor: pointer;
+
+}
+
 .children {
 	display: inline-block;
 }
 
+.children-plus {
+	content: "";
+	position: absolute;
+	right: 54px;
+	width: 38px;
+	cursor: pointer;
+	text-align: center;
+	padding-top: 5px;
+	color: #a9a9a9;
+	font-size: 24px;
+}
+
+.children-plus:hover {
+	color: #000000;
+	cursor: pointer;
+}
+.children-plus:active {
+	color: #81b3d2;
+	cursor: pointer;
+
+}
+.children-minus {
+	content: "";
+	position: absolute;
+	right: 129px;
+	top: 4px;
+	width: 38px;
+	cursor: pointer;
+	text-align: center;
+	padding-top: 0px;
+	color: #a9a9a9;
+	font-size: 24px;
+}
+
+.children-minus:hover {
+	color: #000000;
+	cursor: pointer;
+}
+.children-minus:active {
+	color: #81b3d2;
+	cursor: pointer;
+
+}
+.adults input,
+.children input {
+	padding-left: 35px;
+	padding-right: 35px;
+	width: 44px;
+}
+
 .adults label {
-	margin-right: 42px;
+	margin-right: 39px;
 }
 .children label {
 	margin-right: 26px;
@@ -383,12 +496,15 @@ h2:hover {
 
 .date-in label,
 .date-out label {
-	margin-right: 25px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+	margin-top: 7px;
 }
 
 
 .search-window input {
-	height: 34px;
+	height: 35px;
 	border: 0px;
 	background-color: #f2f2f2;
 	text-indent: 15px;
@@ -441,13 +557,12 @@ h2:hover {
 	text-transform: uppercase;
 }
 
-.adults input,
-.children input {
-	width: 38px;
-}
 
 
-						/* ПОДВАЛЬЧИК РОДИМЫЙ!! 
+
+
+
+						/* ПОДВАЛЬЧИК РОДИМЫЙ!! */
 
 .main-footer {
 	margin-bottom: 50px;
@@ -458,38 +573,70 @@ h2:hover {
 }
 
 .hashtag {
-	float: left;
+	display: inline-block;
 	font-size: 21px;
 	width: 256px;
-	height: 120px;
+	margin-top: 47px;
 	text-align: center;
-	background-color: #81b3d2;
+	vertical-align: top;
 }
 
 .hashtag a {
 	text-decoration: none;
 	color: #000000;
 }
+.hashtag a:hover {
+	color: #81b3d2;
+}
 
 .social {
-	float: left;
+	display: inline-block;
 	width: 256px;
-	height: 120px;
-	background-color: #81b3d2;
+	vertical-align: top;
 
+}
+.social-btn { 
+	display: inline-block;
+	height: 48px;
+	width: 46px;
+	background-color: #81b3d2;
+	margin: 36px 6px 0px 0px;
+
+}
+.social-btn-tw {
+	margin-left: 53px;
 }
 
 .designer {
-	float: right;
+	display: inline-block;
 	width: 256px;
-	height: 120px;
 	font-size: 14px;
 	line-height: 26px;
+	vertical-align: top;
 }
+.copyright {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	line-height: 26px;
+	margin-top: 46px;
+	margin-left: 30px;
 
+}
+/*
+.hta-icon {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 41px;
+	margin-left: 5px;
+}
+*/ 
 
-*/
  				/* SEDONA HOTELS */ 
+
+body .catalog {
+
+} 				
 
 .hotels-container {
 
@@ -498,6 +645,7 @@ h2:hover {
 
 .search-hotels {
 	background-image: url(../img/holes-background.jpg);
+	background-size: 768px 216px;
 	max-height: 217px;
 	overflow: hidden;
 	color: #ffffff;
@@ -509,8 +657,11 @@ fieldset {
 	border: none;
 }
 
-legend {
+.legend-title {
 	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+	margin-bottom: 24px;
 }
 
 .infrastructure {
@@ -521,8 +672,42 @@ legend {
 	height: 217px;
 	vertical-align: top;
 }
-.infrastructure label {
 
+.check {
+	position: relative;
+	display: inline-block;	
+	vertical-align: top;
+	margin-bottom: 25px;
+	margin-left: 37px;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.infrastructure .check {
+	margin-left: 39px;
+}
+
+
+.option {
+	position: relative;
+	margin: 0;
+}
+
+.option input[type="checkbox"] {
+  display: none;
+}
+
+.option input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -3px;
+  left: 0;
+
+  width: 17px;
+  height: 17px;
+
+  border: 2px solid #000000;
 }
 
 .housing-type {
@@ -534,13 +719,141 @@ legend {
 	vertical-align: top;
 }
 
-.price {
+.filter-range {
 	display: inline-block;
-	width: 230px;
-	height: 217px;
-	margin: 27px 0px 0px 0px;
-	vertical-align: top;
+	width: 224px;
+	margin-top: 27px;
+	margin-left: 65px;
+
+	color: #ffffff;
+	text-transform: uppercase;
 }
+
+.filter-range-title {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-bottom: 10px;
+}
+.price-controls {
+	position: relative;
+  	height: 32px;
+  	margin-bottom: 20px;
+
+ 	 font-size: 0;
+
+ 	border: 2px solid #ffffff;
+  	border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+ 	display: inline-block;
+
+ 	font-size: 14px;
+ 	line-height: 38px;
+ 	vertical-align: top;
+
+	cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 60px;
+  padding-left: 40px;
+}
+
+.price-controls input {
+  width: 30px;
+  height: 22px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+	position: absolute;
+  	top: -9px;
+  	width: 4px;
+  	height: 4px;
+
+  	background: #ababab;
+  	border: 8px solid #ffffff;
+  	border-radius: 50%;
+  	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  	cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 1%;
+}
+
+.range-toggle-max {
+  left: 68%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
 				/* СОРТИРОВКА НАЙДЕННЫХ ОТЕЛЕЙ */
 .found {
 	display: inline-block;
@@ -592,6 +905,7 @@ legend {
 
 .buttons {
 	display: inline-block;
+	background-color: #ff0000;
 }
 
 				/* РЕЗУЛЬТАТЫ ОТЕЛЕЙ */
@@ -603,6 +917,7 @@ legend {
 .hotel-description {
 	display: inline-block;
 	border-bottom: 1px solid #e5e5e5;
+	width: 768px;
 }
 
 .hotel-intro {
@@ -659,7 +974,7 @@ legend {
 	padding-left: 16px; 
 	padding-top: 5px;
 	margin-right: 3px;
-	height: 23px;
+	height: 22px;
 	font-weight: bold;
 	background-color: #81b3d2;
 	color: #ffffff;
@@ -671,7 +986,7 @@ legend {
 	width: 125px;
 	padding-left: 17px; 
 	padding-top: 5px;
-	height: 23px;
+	height: 22px;
 	font-weight: bold;
 	background-color: #766357;
 	color: #ffffff; 
@@ -684,5 +999,52 @@ legend {
 }
 
 .rating {
+	position: relative;
 	display: inline-block;
+	vertical-align: top;
+	height: 90px;
+	margin-left: 125px;
+	padding: 0px;
+}
+
+.rating-count {
+	display: inline-block;
+	height: 22px;
+	width: 110px;
+	background-color: #f2f2f2;
+	text-align: center;
+	margin-top: 63px;
+	padding-top: 5px;
+	color: #666666;
+}
+
+.star4 {
+  content: "";
+  position: absolute;
+  right: 0px;
+  width: 89px;
+  height: 17px;
+
+  background-color: #ff0000;
+
+}
+.star2 {
+  content: "";
+  position: absolute;
+  right: 0px;
+  width: 42px;
+  height: 17px;
+
+  background-color: #ff0000;
+
+}
+.star3 {
+  content: "";
+  position: absolute;
+  right: 0px;
+  width: 65px;
+  height: 17px;
+
+  background-color: #ff0000;
+
 }

@@ -33,33 +33,60 @@
                           <!--Поиск отелей-->
   <main class="hotels-container">
     <div class="search-hotels">
-      <form class="search-hotels-form" action="#" method="get">
+      <form class="search-hotels-form" action="search-result.html" method="get">
         <fieldset class="infrastructure">
-          <legend>инфраструктура</legend>
-              <label><input type="checkbox" name="pool" checked>Бассейн</label><br>
-              <label><input type="checkbox" name="parking">Паркоква</label><br>
-              <label><input type="checkbox" name="wi-fi">Wi-Fi</label>
+          <legend class="legend-title">инфраструктура</legend>
+            <p class="option">
+              <input type="checkbox" id="pool" checked>
+              <span class="checkbox-indicator"></span>
+              <label class="check" for="pool">Бассейн</label>
+            </p>
+            <p class="option">
+              <input type="checkbox" id="parking">
+              <span class="checkbox-indicator"></span>
+              <label class="check" for="parking">Паркоква</label>
+            </p>
+            <p class="option">
+              <input type="checkbox" id="wi-fi">
+              <span class="checkbox-indicator"></span>
+              <label class="check" for="wi-fi">Wi-Fi</label>
+            </p>
         </fieldset>
 
         <fieldset class="housing-type">
-          <legend>тип жилья</legend>
-              <label><input type="checkbox" name="hotel" checked>Гостиница</label><br>
-              <label><input type="checkbox" name="motel" checked>Мотель</label><br>
-              <label><input type="checkbox" name="apartments" checked>Апартаменты</label>
+          <legend class="legend-title">тип жилья</legend>
+            <p class="option">
+              <input type="checkbox" id="hotel" checked>
+              <span class="checkbox-indicator"></span>
+              <label class="check" for="hotel">Гостиница</label>
+            </p>
+            <p class="option">
+              <input type="checkbox" id="motel" checked>
+              <span class="checkbox-indicator"></span>
+              <label class="check" for="motel">Мотель</label>
+            </p>
+            <p class="option">
+              <input type="checkbox" id="apartments" checked>
+              <span class="checkbox-indicator"></span>
+              <label class="check" for="apartments">Апартаменты</label>
+            </p>
         </fieldset>
 
-        <div class="price">
-          <span>Стоимость в сутки (р):</span>
-            <div class="price-per-day">
-              <input type="text" name="price" id="low">
-              <input type="text" name="price" id="high">   
+        <div class="filter-range">
+          <div class="filter-range-title">Стоимость в сутки (р):</div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
             </div>
-            <div class="count">
-              <p class="count-left"><span></span></p>
-              <p class="count-right"><span></span></p>
-            </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
         </div>
-        <button class="btn-transparent" type="submit">Показать</button>
       </form>
     </div>
                         <!--Сортировка отелей-->
@@ -68,7 +95,7 @@
         <span class="found">Найдено: 3</span>
         <ul class="sort">
               <li class="sort-title">Сортировка:</li> 
-              <li class="sort-item"><a class="sort-button active">По цене</a></li>
+              <li class="sort-item active"><a class="sort-button active">По цене</a></li>
               <li class="sort-item"><a class="sort-button">По типу</a></li>
               <li class="sort-item"><a class="sort-button">По рейтингу</a></li>
         </ul>
@@ -97,8 +124,8 @@
             </div>
             <div class="rating">
               <div class="stars">
-                <span class="star"></span>
-                <span class="rating-count">Рейтинг: 8.5</span>
+                <span class="star4"></span>
+                <span class="rating-count">Рейтинг: 8,5</span>
               </div>
             </div>
         </div>      
@@ -122,8 +149,8 @@
           </div>
           <div class="rating">
             <div class="stars">
-              <span class="star"></span>
-              <span class="rating-count">Рейтинг: 8.9</span>
+              <span class="star2"></span>
+              <span class="rating-count">Рейтинг: 8,9</span>
             </div>  
           </div>
         </div>
@@ -147,8 +174,8 @@
             </div>
           <div class="rating">
             <div class="stars">
-              <span class="star"></span>
-              <span class="rating-count">Рейтинг: 9.2</span>
+              <span class="star3"></span>
+              <span class="rating-count">Рейтинг: 9,2</span>
             </div>
           </div>
         </div>
@@ -157,19 +184,22 @@
 
   </main>
                         <!--Подвальчик =)-->
-   <footer class="main-footer">
-      <div class="hashtag">
-        <a class="" href="#"><b>#VISITSEDONA</b></a>
-      </div>
-      <div class="social">
-          <a class="social-btn social-btn-tw" href="#"></a>
-          <a class="social-btn social-btn-fb" href="#"></a>
-          <a class="social-btn social-btn-yt" href="#"></a> 
-      </div>
-      <div class="designer">
-        <span class="copyright">WEBSITE BY</span>
-        <a class="hta-icon" href="https://htmlacademy.ru/"></a>
+   <footer class="main-footer" id="information">
+      <div class="footer-content">
+        <div class="hashtag">
+          <a class="" href="#"><b>#visitSEDONA</b></a>
+        </div>
+        <div class="social">
+            <a class="social-btn social-btn-tw" href="#"></a>
+            <a class="social-btn social-btn-fb" href="#"></a>
+            <a class="social-btn social-btn-yt" href="#"></a> 
+        </div>
+        <div class="designer">
+          <span class="copyright">WEBSITE by</span>
+          <a class="hta-icon" href="https://htmlacademy.ru/"></a>
+        </div>
       </div>
     </footer>
+
   </body>
 </html>
