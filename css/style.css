@@ -9,6 +9,7 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	position: relative;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 							/* ХЕДЕР!! ЛОГОТИП ТОЖЕ ТУТ!! */ 
 
@@ -571,7 +572,10 @@ h2:hover {
 	font-size: 0px;
 	vertical-align: top;
 }
-
+.footer-content {
+	height: 120px;
+	background-color: #e9e5dc;
+}
 .hashtag {
 	display: inline-block;
 	font-size: 21px;
