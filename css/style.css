@@ -172,7 +172,10 @@ h1 {
 	height: 330px;
 }
 
-.feature-name {
+.feature-name1,
+.feature-name2,
+.feature-name3 {
+	position: relative;
 	padding-top: 160px;
 	text-align: center;
 	display: block;
@@ -181,6 +184,38 @@ h1 {
 	font-weight: bold;
 	vertical-align: top;
 }
+.feature-name1::before {
+	content: "";
+  	position: absolute;
+  	top: 60px;
+  	left: 90px;
+  	background: transparent url(../img/spritesheet.png) no-repeat;
+    width: 75px;
+    height: 72px;
+    background-position: -10px -370px;
+
+}
+.feature-name2::before {
+	content: "";
+  	position: absolute;
+  	top: 60px;
+  	left: 90px;
+  	background: transparent url(../img/spritesheet.png) no-repeat;
+    width: 75px;
+    height: 72px;
+    background-position: -10px -462px;
+}
+.feature-name3::before {
+	content: "";
+  	position: absolute;
+  	top: 56px;
+  	left: 96px;
+  	background: transparent url(../img/spritesheet.png) no-repeat;
+    width: 75px;
+    height: 78px;
+    background-position: -10px -552px;
+}
+
 
 .feature-text {
 	padding: 10px 45px 0px;
@@ -358,7 +393,16 @@ h2:hover {
   width: 21px;
   height: 22px;
 
-  background: #ff0000 url("../img/sprite.png") no-repeat;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -10px -121px;
+}
+.calendar-icon-in:hover {
+	background: transparent url("../img/spritesheet.png") no-repeat;
+  	background-position: -10px -205px;
+}
+.calendar-icon-in:active {
+	background: transparent url("../img/spritesheet.png") no-repeat;
+  	background-position: -10px -163px;
 }
 
 .date-out {
@@ -376,7 +420,16 @@ h2:hover {
   width: 21px;
   height: 22px;
 
-  background: #ff0000 url("../img/sprite.png") no-repeat;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+   background-position: -10px -121px;
+}
+.calendar-icon-out:hover {
+	background: transparent url("../img/spritesheet.png") no-repeat;
+  	background-position: -10px -205px;
+}
+.calendar-icon-out:active {
+	background: transparent url("../img/spritesheet.png") no-repeat;
+  	background-position: -10px -163px;
 }
 
 .adults-children {
@@ -574,7 +627,6 @@ h2:hover {
 }
 .footer-content {
 	height: 120px;
-	background-color: #e9e5dc;
 }
 .hashtag {
 	display: inline-block;
@@ -595,6 +647,7 @@ h2:hover {
 
 .social {
 	display: inline-block;
+	position: relative;
 	width: 256px;
 	vertical-align: top;
 
@@ -607,8 +660,44 @@ h2:hover {
 	margin: 36px 6px 0px 0px;
 
 }
+.social-btn:hover {
+	background-color: #669ec0;
+}
+.social-btn:active {
+	background-color: #5496bd;
+}
 .social-btn-tw {
-	margin-left: 53px;
+		margin-left: 53px;
+}
+.social-btn-tw::after {
+	content: "";
+	position: absolute;
+	top: 52px;
+	left: 68px;
+	background: transparent url("../img/spritesheet.png") no-repeat;
+	width: 17px;
+    height: 15px;
+    background-position: -10px -909px;
+}
+.social-btn-fb::after {
+	content: "";
+	position: absolute;
+	top: 49px;
+	left: 123px;
+	background: transparent url("../img/spritesheet.png") no-repeat;
+	width: 10px;
+    height: 19px;
+    background-position: -10px -331px;
+}
+.social-btn-yt::after {
+	content: "";
+	position: absolute;
+	top: 52px;
+	left: 170px;
+	background: transparent url("../img/spritesheet.png") no-repeat;
+	width: 20px;
+    height: 16px;
+    background-position: -10px -944px;
 }
 
 .designer {
@@ -627,16 +716,32 @@ h2:hover {
 	margin-left: 30px;
 
 }
-/*
+
 .hta-icon {
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 41px;
 	margin-left: 5px;
+	background: transparent url("../img/spritesheet.png") no-repeat;
+	width: 113px;
+    height: 39px;
+    background-position: -10px -648px;
 }
-*/ 
-
+.hta-icon:hover {
+	background: transparent url("../img/spritesheet.png") no-repeat;
+	width: 113px;
+    height: 39px;
+    background-position: -10px -766px;
+}
+.hta-icon:active {
+	background: transparent url("../img/spritesheet.png") no-repeat;
+	width: 113px;
+    height: 39px;
+    background-position: -10px -708px;
+}
  				/* SEDONA HOTELS */ 
+
+
 
 body .catalog {
 
@@ -680,9 +785,12 @@ fieldset {
 .check {
 	position: relative;
 	display: inline-block;	
+	width: 81px;
+	text-align: left;
 	vertical-align: top;
 	margin-bottom: 25px;
-	margin-left: 37px;
+	padding-left: 39px;
+	/*margin-left: 37px;*/
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
@@ -690,7 +798,7 @@ fieldset {
 }
 
 .infrastructure .check {
-	margin-left: 39px;
+	/*margin-left: 39px;*/
 }
 
 
@@ -704,15 +812,25 @@ fieldset {
 }
 
 .option input[type="checkbox"] + .checkbox-indicator {
-  position: absolute;
-  top: -3px;
-  left: 0;
-
-  width: 17px;
-  height: 17px;
-
-  border: 2px solid #000000;
+ 	position: absolute;
+ 	top: -3px;
+ 	left: 0;
+  	background: transparent url("../img/spritesheet.png") no-repeat;
+    width: 22px;
+    height: 22px;
+    background-position: -10px -825px;
 }
+
+.option input[type="checkbox"]:checked + .checkbox-indicator {
+ 	position: absolute;
+ 	top: -3px;
+ 	left: 0;
+  	background: transparent url("../img/spritesheet.png") no-repeat;
+    width: 26px;
+    height: 22px;
+    background-position: -10px -289px;
+}
+
 
 .housing-type {
 	display: inline-block;
@@ -895,22 +1013,81 @@ fieldset {
 	color: #cacaca;
 	margin-right: 30px;
 	vertical-align: top;
-	border-bottom: 1px dotted #81b3d2;
+	
 
 }
 .sort-item:last-child {
 	margin-right: 125px;
 }
 
+.sort-button {
+	border-bottom: 1px dotted #81b3d2;
+	cursor: pointer;
+	text-decoration: none;
+	color: #cccccc;
+}
+
+.sort-button:hover   {
+	border-bottom: 1px dotted #81b3d2;
+	color: #81b3d2;
+}
+
+
+.sort-button:focus   {
+	color: #81b3d2;
+	border: none;
+}
+
+
 .active {
 	border-bottom: none;
 	color: #81b3d2;
 }
 
-.buttons {
+.arrows {
 	display: inline-block;
-	background-color: #ff0000;
+	position: relative;
 }
+.arrow-up {
+	content: ''; 
+    position: absolute;
+    cursor: pointer;
+	left: -5px; 
+	bottom: 1px; 
+    border: 6px solid transparent; 
+    border-bottom: 10px solid #cccccc; 
+}
+.arrow-up:hover {
+	border-bottom: 10px solid #000000; 
+}
+.arrow-up:active   {
+	border-bottom: 10px solid #81b3d2; 
+}
+.arrow-up:focus   {
+	border-bottom: 10px solid #81b3d2; 
+} 
+
+.arrow-down	 {
+	content: ''; 
+    position: absolute;
+    cursor: pointer;
+	left: 18px; 
+	top: -11px; 
+    border: 6px solid transparent;
+    border-top: 10px solid #cccccc; 
+}
+.arrow-down:hover {
+	border-top: 10px solid #000000; 
+}
+.arrow-down:active   {
+	border-top: 10px solid #81b3d2; 
+}
+.arrow-down:focus   {
+	border-top: 10px solid #81b3d2; 
+} 
+
+
+
 
 				/* РЕЗУЛЬТАТЫ ОТЕЛЕЙ */
 
@@ -945,6 +1122,7 @@ fieldset {
 
 .hotel-name {
 	display: inline-block;
+	cursor: pointer;
 	margin-top: -3px;
 	margin-bottom: 3px;
 	text-decoration: none;
@@ -952,6 +1130,12 @@ fieldset {
 	line-height: 21px;
 	font-weight: bold;
 	color: #000000;
+}
+.hotel-name:hover {
+	color: #81b3d2;
+}
+.hotel-name:active {
+	color: #cacaca;
 }
 
 .hotel-top {
@@ -984,6 +1168,15 @@ fieldset {
 	color: #ffffff;
 
 }
+.more:hover {
+	background-color: #669ec0;
+
+}
+.more:active {
+	background-color: #5496bd;
+	color: #94b9d2;
+
+}
 .reserve {
 	display: inline-block;
 	text-decoration: none;
@@ -995,6 +1188,14 @@ fieldset {
 	background-color: #766357;
 	color: #ffffff; 
 
+}
+.reserve:hover {
+	background-color: #604e43;
+
+}
+.reserve:active {
+	background-color: #604e43;
+	color: #94b9d2;
 }
 
 .hotel-bottom {
@@ -1023,14 +1224,14 @@ fieldset {
 }
 
 .star4 {
-  content: "";
-  position: absolute;
-  right: 0px;
-  width: 89px;
-  height: 17px;
-
-  background-color: #ff0000;
-
+	content: "";
+	position: absolute;
+	right: 0px;
+	width: 89px;
+	height: 17px;
+	
+	background: transparent url("../img/spritesheet.png") no-repeat;
+	background-position: -10px -84px;
 }
 .star2 {
   content: "";
@@ -1039,7 +1240,8 @@ fieldset {
   width: 42px;
   height: 17px;
 
-  background-color: #ff0000;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+	background-position: -10px -10px;
 
 }
 .star3 {
@@ -1049,6 +1251,7 @@ fieldset {
   width: 65px;
   height: 17px;
 
-  background-color: #ff0000;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+	background-position: -10px -47px;
 
 }
