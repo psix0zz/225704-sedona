@@ -615,7 +615,7 @@ iframe {
 						/* ПОДВАЛЬЧИК РОДИМЫЙ!! */
 
 .main-footer {
-	margin-bottom: 50px;
+
 	background-color: rgba(255, 255, 255, 0.9);
 	opacity: 90%;
 	font-size: 0px;
@@ -624,7 +624,7 @@ iframe {
 }
 .index-footer {
 	position: absolute;
-	bottom: -170px;
+
 	box-shadow: 0 2px 10px 0 rgba(0,0,0,0.5);
 }
 
