@@ -1,0 +1,119 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-2start {
+    width: 42px;
+    height: 17px;
+    background-position: -10px -10px;
+}
+
+.sprite-3stars {
+    width: 65px;
+    height: 17px;
+    background-position: -10px -47px;
+}
+
+.sprite-4stars {
+    width: 89px;
+    height: 17px;
+    background-position: -10px -84px;
+}
+
+.sprite-calendar {
+    width: 21px;
+    height: 22px;
+    background-position: -10px -121px;
+}
+
+.sprite-calendar-down {
+    width: 21px;
+    height: 22px;
+    background-position: -10px -163px;
+}
+
+.sprite-calendar-hvr {
+    width: 21px;
+    height: 22px;
+    background-position: -10px -205px;
+}
+
+.sprite-checked-dis {
+    width: 26px;
+    height: 22px;
+    background-position: -10px -247px;
+}
+
+.sprite-cheked {
+    width: 26px;
+    height: 22px;
+    background-position: -10px -289px;
+}
+
+.sprite-facebook {
+    width: 10px;
+    height: 19px;
+    background-position: -10px -331px;
+}
+
+.sprite-feature-name1 {
+    width: 75px;
+    height: 72px;
+    background-position: -10px -370px;
+}
+
+.sprite-feature-name2 {
+    width: 74px;
+    height: 70px;
+    background-position: -10px -462px;
+}
+
+.sprite-feature-name3 {
+    width: 64px;
+    height: 76px;
+    background-position: -10px -552px;
+}
+
+.sprite-hta-icon {
+    width: 113px;
+    height: 39px;
+    background-position: -10px -648px;
+}
+
+.sprite-hta-icon-down {
+    width: 113px;
+    height: 39px;
+    background-position: -10px -707px;
+}
+
+.sprite-hta-icon-hvr {
+    width: 113px;
+    height: 39px;
+    background-position: -10px -766px;
+}
+
+.sprite-no-check {
+    width: 22px;
+    height: 22px;
+    background-position: -10px -825px;
+}
+
+.sprite-no-check-dis {
+    width: 22px;
+    height: 22px;
+    background-position: -10px -867px;
+}
+
+.sprite-twitter {
+    width: 17px;
+    height: 15px;
+    background-position: -10px -909px;
+}
+
+.sprite-youtube {
+    width: 20px;
+    height: 16px;
+    background-position: -10px -944px;
+}
