@@ -7,3 +7,4 @@
 	console.log("Click!")
 	popup.classList.toggle("search-window-hidden");
 	      })
+	
