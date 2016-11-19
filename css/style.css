@@ -30,7 +30,6 @@ body {
 .navigation a{
 	text-decoration: none;
 	display: block;
-
 	color: #000000;
 }  
 .navigation a:hover {
@@ -79,6 +78,18 @@ body {
 .main-logo a {
 	font-size: 0px;
 	line-height: 0px;
+}
+
+.active-page a {
+	color: #766357;
+}
+
+.active-page a:hover {
+	color: #604e43;
+}
+
+.active-page a:active {
+	color: #dbd8d5;
 }
 
 
@@ -1203,8 +1214,8 @@ option input[type="checkbox"]:disabled + .checkbox-indicator {
 
 }
 .reserve:active {
-	background-color: #604e43;
-	color: #94b9d2;
+	background-color: #503e33;
+	color: #928a85;
 }
 
 .hotel-bottom {
