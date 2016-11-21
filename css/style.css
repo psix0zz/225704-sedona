@@ -109,6 +109,7 @@ h1 {
 .intro-image-bottom {
 	position: absolute;
 	bottom: 1px;
+	left: 0px;
 }
 
 .town {
@@ -124,7 +125,7 @@ h1 {
 
 .town-reasons {
 	display: block;
-margin: 0;
+	margin: 0;
 	color: #333333;
 	font-size: 14px;
 	line-height: 26px;
@@ -133,51 +134,66 @@ margin: 0;
            				 /* БЛОКИ ПРИЧИН!! БОЛЬШИЕ ТАКИЕ!! С КАРТИНКАМИ КОТОРЫЕ!!!! */
 .main-reason {
 	color: #ffffff;
-	display: flex;
 	height: 256px;
 }
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-.reason {
+.reason-1 {
+	float: left;
 	background-color: #81b3d2;
 	width: 256px;
-	height: 256px;
+	min-height: 256px;
 	text-align: center;
 }
 
-.reason-picture1 {
+.reason-picture-1 {
+	float: right;
 	background-color: #81b3d2;
 	height: 256px;
 	width: 512px;
 	background-image: url(../img/reason-1.jpg);
+	background-color: #81b3d2;
 }
-.reason-picture2 {
+.reason-2 {
+	float: right;
+	background-color: #81b3d2;
+	width: 256px;
+	min-height: 256px;
+	text-align: center;
+}
+.reason-picture-2 {
+	float: left;
 	background-color: #81b3d2;
 	height: 256px;
 	width: 512px;
 	background-image: url(../img/reason-2.jpg);
+	background-color: #81b3d2;
 }
 .reason-title {
-	padding: 0px 50px;
+	display: inline-block;
+	padding-top: 47px;
+	padding-bottom: 25px;
 	display: block;
 	font-size: 21px;
 	line-height: 21px;
-	padding-top: 47px;
 	font-weight: bold;
-	margin-bottom: 25px;
-
 }
 
 .reason-title-text {
-	display: block;
+	display: inline-block;
 	font-weight: inherit;
 	line-height: 21px;
-	width: 180px;
+	padding: 0px 38px;
 	margin: 0 auto;
-
+	overflow: hidden;
 }
 
 .reason-title-number {
-	display: block;
+	display: inline-block;
 	font-weight: normal;
 	line-height: 21px;
 	width: 180px;
@@ -192,7 +208,8 @@ margin: 0;
 
 
 .features {
-	  	font-size: 0
+	display: inline-block;
+	font-size: 0px;
 }
 
 .feature-box {
@@ -240,14 +257,18 @@ margin: 0;
 	vertical-align: top;
 }
 
-.features div:nth-child(2) .feature-text {
+.other-reason-text-middle {
 	padding: 10px 49px 0px;
 }
 
 						/* БЛОК ПРИЧИН 3 - 5 !!! */
 
-.other-reasons-block {
+.other-reasons {
 	display: inline-block;
+}
+
+.other-reasons-block {
+	float: left;
 	width: 256px;
 	height: 256px;
 }
@@ -286,54 +307,55 @@ margin: 0;
 	margin-top: 0px;
 }	
 
-.other-reasons div:nth-child(2) .other-reason-text {
+.other-reason-text-middle {
 	padding: 0px 60px 0px;
 }
 
 						/* БЛОК ЗАИНТЕРЕСОВАЛИСЬ */
 .interest {
-	height: 235px;
+	display: inline-block;
+	min-height: 235px;
 }
 .interest-head {
-	margin-top: 55px;
-	display: block;
+	width: 768px;
+	margin-top: 52px;
+	display: inline-block;
 	font-size: 30px;
 	line-height: 24px;
 	font-weight: bold;
 	text-align: center;
+	margin-bottom: 16px;
 }
 
 .interest-text {
-	display: block;
+	display: inline-block;
+	width: 768px;
 	font-size: 14px;
 	line-height: 24px;
 	color: #333333;
 	text-align: center;
 	margin-bottom: 48px;
-	margin-top: 30px;
-}
 
-										/* БЛОК ПОИСКА ГОСТИНИЦЫ!!!! */
+}
 h2 {
-	padding-top: 30px;
 	font-weight: bold;
-	display: block;
+	display: inline-block;
+	min-height: 58px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
 	color: #ffffff;
 	width: 568px;
-	height: 56px;
-	margin: 0 auto;
+	padding-top: 28px;
+	margin: 0px 0px 0px 100px;
 	background: #766357;
 	text-align: center;
 	cursor: pointer;
-
 }
 h2:hover {
 	cursor: pointer;
 }
-
+										/* БЛОК ПОИСКА ГОСТИНИЦЫ!!!! */
 .map {
 	height: 593px;
 	width: 768px;
@@ -766,7 +788,8 @@ body .catalog {
 
 .search-hotels {
 	background-image: url(../img/holes-background.jpg);
-	background-size: 768px 216px;
+	background-color: #595253;
+	background-size: 768px 350px;
 	max-height: 217px;
 	overflow: hidden;
 	color: #ffffff;
@@ -1161,7 +1184,6 @@ option input[type="checkbox"]:disabled + .checkbox-indicator {
 .hotel-top {
 	display: inline-block;
 	vertical-align: top;
-	margin: 0;
 	padding: 0px;
 	padding-top: 6px;
 	padding-bottom: 15px;
@@ -1175,14 +1197,21 @@ option input[type="checkbox"]:disabled + .checkbox-indicator {
 	width: 111px;
 }
 
+.hotel-bottom {
+	display: inline-block;
+	vertical-align: top;
+	width: 260px;
+}
+
 .more {
 	display: inline-block;
+	vertical-align: top;
 	text-decoration: none;
 	width: 93px;
 	padding-left: 16px; 
 	padding-top: 5px;
 	margin-right: 3px;
-	height: 22px;
+	min-height: 22px;
 	font-weight: bold;
 	background-color: #81b3d2;
 	color: #ffffff;
@@ -1199,11 +1228,12 @@ option input[type="checkbox"]:disabled + .checkbox-indicator {
 }
 .reserve {
 	display: inline-block;
+	vertical-align: top;
 	text-decoration: none;
 	width: 125px;
 	padding-left: 17px; 
 	padding-top: 5px;
-	height: 22px;
+	min-height: 22px;
 	font-weight: bold;
 	background-color: #766357;
 	color: #ffffff; 
@@ -1216,11 +1246,6 @@ option input[type="checkbox"]:disabled + .checkbox-indicator {
 .reserve:active {
 	background-color: #503e33;
 	color: #928a85;
-}
-
-.hotel-bottom {
-	display: inline-block;
-	vertical-align: top;
 }
 
 .rating {
