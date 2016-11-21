@@ -788,7 +788,7 @@ body .catalog {
 
 .search-hotels {
 	background-image: url(../img/holes-background.jpg);
-	background-color: #595253;
+	background-color: #6283aa;
 	background-size: 768px 350px;
 	max-height: 217px;
 	overflow: hidden;
@@ -1200,17 +1200,15 @@ option input[type="checkbox"]:disabled + .checkbox-indicator {
 .hotel-bottom {
 	display: inline-block;
 	vertical-align: top;
-	width: 260px;
 }
 
 .more {
 	display: inline-block;
 	vertical-align: top;
 	text-decoration: none;
-	width: 93px;
 	padding-left: 16px; 
+	padding-right: 16px;
 	padding-top: 5px;
-	margin-right: 3px;
 	min-height: 22px;
 	font-weight: bold;
 	background-color: #81b3d2;
@@ -1230,8 +1228,8 @@ option input[type="checkbox"]:disabled + .checkbox-indicator {
 	display: inline-block;
 	vertical-align: top;
 	text-decoration: none;
-	width: 125px;
-	padding-left: 17px; 
+	padding-left: 17px;
+	padding-right: 17px;
 	padding-top: 5px;
 	min-height: 22px;
 	font-weight: bold;
